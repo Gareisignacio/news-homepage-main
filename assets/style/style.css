@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+:root {
+  --bg-principal:hsl(35, 77%, 62%);
+  --bg-secundario:hsl(5, 85%, 63%);
+  --Neutral: hsl(36, 100%, 99%);
+  --Grayishblue: hsl(233, 8%, 79%);
+  --color-secundario: hsl(236, 13%, 42%);
+  --color-principal: hsl(240, 100%, 5%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  border: 1px solid red;
+  width: 100vw;
+  height: 100vh;
+  padding: 5em;
+  font-size: 15px;
+  color: var(--color-secundario);
+  font-family: 'Inter', sans-serif; }
+
+header {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between; }
+
+main {
+  border: 1px solid black; }
+  main .upper-section {
+    width: 100%;
+    display: flex; }
+    main .upper-section .principal {
+      border: 1px solid black;
+      width: 70%;
+      padding-right: 3em; }
+      main .upper-section .principal img {
+        width: 100%; }
+    main .upper-section .aside {
+      border: 1px solid black;
+      width: 30%;
+      background: var(--color-principal);
+      padding: 2em; }
+      main .upper-section .aside h2 {
+        font-size: 3em;
+        height: 16%;
+        color: var(--bg-principal);
+        margin-bottom: .2em; }
+      main .upper-section .aside div {
+        border: 1px solid white;
+        height: 28%; }
+        main .upper-section .aside div h3 {
+          color: var(--Neutral); }
+
+/*# sourceMappingURL=style.css.map */
