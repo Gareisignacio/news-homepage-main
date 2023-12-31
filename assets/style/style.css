@@ -16,15 +16,15 @@ body {
   border: 1px solid red;
   width: 100vw;
   height: 100vh;
-  padding: 5em;
+  padding: 10vh 10vw;
   font-size: 15px;
   color: var(--color-secundario);
   font-family: 'Inter', sans-serif; }
 
 header {
-  width: 100%;
+  width: 80vw;
   border: 1px solid black;
-  padding-bottom: 3em; }
+  height: 15vh; }
   header nav {
     display: flex;
     justify-content: space-between; }
@@ -38,21 +38,35 @@ header {
         text-decoration: none; }
 
 main {
-  border: 1px solid black; }
+  height: 65vh;
+  border: 1px solid black;
+  width: 80vw; }
   main .upper-section {
     width: 100%;
-    display: flex; }
+    display: flex;
+    height: 80%; }
     main .upper-section .principal {
       border: 1px solid black;
       width: 70%;
-      padding-right: 3em; }
+      padding-right: 2em; }
       main .upper-section .principal img {
-        width: 100%; }
+        width: 100%;
+        height: 75%; }
+      main .upper-section .principal div {
+        padding: 1em 0em;
+        display: flex; }
+        main .upper-section .principal div h1 {
+          font-size: 1.2rem;
+          width: 50%; }
+        main .upper-section .principal div .parag {
+          font-size: .5rem;
+          width: 50%;
+          display: flex;
+          flex-direction: column; }
     main .upper-section .aside {
       border: 1px solid black;
       width: 30%;
-      background: var(--color-principal);
-      padding: 2em; }
+      background: var(--color-principal); }
       main .upper-section .aside h2 {
         font-size: 3em;
         height: 16%;
@@ -63,5 +77,14 @@ main {
         height: 28%; }
         main .upper-section .aside div h3 {
           color: var(--Neutral); }
+  main .lower-section {
+    height: 20%;
+    background: goldenrod; }
+    main .lower-section .lower-list {
+      display: flex; }
+      main .lower-section .lower-list div {
+        display: flex; }
+      main .lower-section .lower-list img {
+        height: 10em; }
 
 /*# sourceMappingURL=style.css.map */
