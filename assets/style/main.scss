@@ -25,8 +25,22 @@ body{
 header{
    width: 100%;
    border: 1px solid black;
-   display: flex;
-   justify-content: space-between;
+   padding-bottom: 3em;
+   nav{
+      display: flex;
+      justify-content: space-between;
+      .nav-menu{
+         width: 400px;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         list-style: none;
+         a{
+            text-decoration: none;
+         }
+         
+      }
+   }
 }
 main{
    border: 1px solid black;
