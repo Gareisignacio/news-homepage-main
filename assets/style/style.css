@@ -1,3 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+:root {
+  --bg-principal:hsl(35, 77%, 62%);
+  --bg-secundario:hsl(5, 85%, 63%);
+  --Neutral: hsl(36, 100%, 99%);
+  --Grayishblue: hsl(233, 8%, 79%);
+  --color-secundario: hsl(236, 13%, 42%);
+  --color-principal: hsl(240, 100%, 5%); }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 3vh 15vw;
+  font-size: 15px;
+  color: var(--color-secundario);
+  font-family: 'Inter', sans-serif; }
+
+header {
+  width: 70vw;
+  height: 11vh; }
+  header nav {
+    display: flex;
+    justify-content: space-between; }
+    header nav .nav-menu {
+      width: 400px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none; }
+      header nav .nav-menu a {
+        text-decoration: none;
+        color: var(--color-secundario); }
+
+main {
+  height: 80vh;
+  width: 70vw; }
+  main .upper-section {
+    width: 100%;
+    display: flex;
+    height: 75%; }
+    main .upper-section .principal {
+      width: 67%;
+      padding-right: 1.5em; }
+      main .upper-section .principal img {
+        width: 100%;
+        height: 60%; }
+      main .upper-section .principal div {
+        padding: 1em 0em;
+        display: flex;
+        height: 40%; }
+        main .upper-section .principal div h1 {
+          font-size: 2.8rem;
+          width: 50%;
+          padding-right: 5rem;
+          color: var(--color-principal);
+          line-height: 45px; }
+        main .upper-section .principal div .parag {
+          font-size: .8rem;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          justify-content: space-between;
+          padding: 0;
+          font-size: 14px; }
+          main .upper-section .principal div .parag p {
+            padding-bottom: 1.5em; }
+          main .upper-section .principal div .parag button {
+            width: 12em;
+            padding: .75em 0em;
+            background-color: var(--bg-secundario);
+            font-weight: bold;
+            color: white;
+            font-size: 14px;
+            letter-spacing: 5px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase; }
+    main .upper-section .aside {
+      width: 33%;
+      background: var(--color-principal);
+      padding: 1.5em; }
+      main .upper-section .aside h2 {
+        font-size: 3em;
+        height: 16%;
+        color: var(--bg-principal);
+        margin-bottom: .2em; }
+      main .upper-section .aside div {
+        border-bottom: 1px solid var(--color-secundario);
+        padding: 1.1em 0em; }
+        main .upper-section .aside div h3 {
+          color: var(--Neutral);
+          font-size: 16px;
+          padding-bottom: .5em; }
+        main .upper-section .aside div p {
+          font-size: 13px; }
+        main .upper-section .aside div:last-child {
+          border-bottom: none; }
+  main .lower-section {
+    height: 20%;
+    margin-top: 2.5%;
+    background: white; }
+    main .lower-section .lower-list {
+      display: flex;
+      justify-content: space-between; }
+      main .lower-section .lower-list div {
+        display: flex;
+        width: 33%; }
+        main .lower-section .lower-list div img {
+          height: 6.7em; }
+        main .lower-section .lower-list div .content {
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          padding-left: 1em; }
+          main .lower-section .lower-list div .content h3 {
+            font-size: 24px; }
+          main .lower-section .lower-list div .content h4 {
+            color: var(--color-principal); }
+
+@media (max-width: 375px) {
+  body {
+    margin: 1em;
+    padding: 0; }
+    body header {
+      margin-bottom: 1em; }
+      body header .nav-menu {
+        display: none; }
+    body main {
+      width: 100; }
+      body main .upper-section {
+        flex-direction: column;
+        width: 100%; }
+        body main .upper-section .principal {
+          display: flex;
+          flex-direction: column;
+          width: 100%; }
+          body main .upper-section .principal img {
+            width: 100%; }
+      body main .lower-section {
+        display: flex;
+        flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */
