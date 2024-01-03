@@ -51,9 +51,12 @@ main{
       .principal{
          width: 67%;
          padding-right:1.5em;
-         img{
+         .img-web{
             width: 100%;
             height: 60%;
+            background-image: url('../images/image-web-3-desktop.jpg');
+            background-position: center;
+            background-size: cover;
          }
          div{
             padding: 1em 0em;
@@ -152,18 +155,70 @@ main{
    }
 }
 
+.display{
+   display: flex !important;
+}
+.close-icon{
+   background-image: url("../images/icon-menu-close.svg") !important;
+
+}
+
 @media (max-width: 375px){
    body{
-      margin: 1em;
-      padding: 0;
+      margin: 0;
+      padding: .5em;
       header{
-         margin-bottom: 1em;
+         width: 360px;
+         height: auto;
+         padding: 1em;
+         background-color: white;
+         margin-bottom: .5em;
+         position: fixed;
+         top:0;
+         .menu-icon{
+            display: block;
+            height: 2.7em;
+            width: 2.7em;
+            background-image: url("../images/icon-menu.svg");
+            background-size: cover;
+            background-position: center;
+         }
          .nav-menu{
             display: none;
+            flex-direction: column;
+            position: absolute;
+            background-color: white;
+            border: .5px solid var(--color-secundario);
+            border-radius: 5px;
+            width: 7.5em;
+            height: 25em;
+            right: 0em;
+            top: 4.6em;
+            li{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+               border-bottom: .5px solid var(--color-secundario);
+               cursor:pointer;
+               width: 100%;
+               height: 100%;
+               &:hover{
+                  background-color: var(--color-principal);
+                  a{
+                  color: white;
+                  }
+               }
+               &:last-child{
+                  border-bottom: none;
+               }
+            }
          }
       }
       main{
-         width: 100vw;
+         width: 100%;
+         padding-top: 60px;
+         height: auto;
          .upper-section{
             flex-direction: column;
             width: 100%;
@@ -171,14 +226,70 @@ main{
                display: flex;
                flex-direction: column;
                width: 100%;
-               img{
-                  width: 100%;
+               padding-right: 0;
+               div{
+                  flex-direction: column;
+                  padding: 2em 0em;
+                  h1{
+                     width: auto;
+                     padding: 0em;
+                  }
+                  .parag{
+                     font-size: 16px;
+                     width: auto;
+                     line-height: 1.5em;
+                     padding-top: 1em;
+                     button{
+                        font-size: 20px;
+                     }
+                  }
+
+               }
+               .img-web{
+                  height: 20em;
+                  background-image: url('../images/image-web-3-mobile.jpg');
+                  background-position: center;
+                  background-size: cover;
+               }
+            }
+            .aside{
+               width: auto;
+               div{
+                  padding: 1.3em 0em;
+                  h3{
+                     font-size: 20px;
+                  }
+                  p{
+                     font-size: 17px;
+                  }
                }
             }
          }
          .lower-section{
-            display: flex;
-            flex-direction: column;
+            .lower-list{
+               flex-direction: column;
+               padding: 2em 0em;
+               div{
+                  width: auto;
+                  padding: .5em 0em;
+                  img{
+                     height: 11em;
+                  }
+                  .content{
+                     padding: 0.5em 1em;
+                     justify-content: space-between;
+                     h3{
+                        font-size: 38px
+                     }
+                     h4{
+                        font-size: 20px
+                     }
+                     p{
+
+                     }
+                  }
+               }
+            }
          }
       }
    }

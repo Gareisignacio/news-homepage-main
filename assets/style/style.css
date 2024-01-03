@@ -46,9 +46,12 @@ main {
     main .upper-section .principal {
       width: 67%;
       padding-right: 1.5em; }
-      main .upper-section .principal img {
+      main .upper-section .principal .img-web {
         width: 100%;
-        height: 60%; }
+        height: 60%;
+        background-image: url("../images/image-web-3-desktop.jpg");
+        background-position: center;
+        background-size: cover; }
       main .upper-section .principal div {
         padding: 1em 0em;
         display: flex;
@@ -123,27 +126,108 @@ main {
           main .lower-section .lower-list div .content h4 {
             color: var(--color-principal); }
 
+.display {
+  display: flex !important; }
+
+.close-icon {
+  background-image: url("../images/icon-menu-close.svg") !important; }
+
 @media (max-width: 375px) {
   body {
-    margin: 1em;
-    padding: 0; }
+    margin: 0;
+    padding: .5em; }
     body header {
-      margin-bottom: 1em; }
+      width: 360px;
+      height: auto;
+      padding: 1em;
+      background-color: white;
+      margin-bottom: .5em;
+      position: fixed;
+      top: 0; }
+      body header .menu-icon {
+        display: block;
+        height: 2.7em;
+        width: 2.7em;
+        background-image: url("../images/icon-menu.svg");
+        background-size: cover;
+        background-position: center; }
       body header .nav-menu {
-        display: none; }
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        border: 0.5px solid var(--color-secundario);
+        border-radius: 5px;
+        width: 7.5em;
+        height: 25em;
+        right: 0em;
+        top: 4.6em; }
+        body header .nav-menu li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 0.5px solid var(--color-secundario);
+          cursor: pointer;
+          width: 100%;
+          height: 100%; }
+          body header .nav-menu li:hover {
+            background-color: var(--color-principal); }
+            body header .nav-menu li:hover a {
+              color: white; }
+          body header .nav-menu li:last-child {
+            border-bottom: none; }
     body main {
-      width: 100; }
+      width: 100%;
+      padding-top: 60px;
+      height: auto; }
       body main .upper-section {
         flex-direction: column;
         width: 100%; }
         body main .upper-section .principal {
           display: flex;
           flex-direction: column;
-          width: 100%; }
-          body main .upper-section .principal img {
-            width: 100%; }
-      body main .lower-section {
-        display: flex;
-        flex-direction: column; } }
+          width: 100%;
+          padding-right: 0; }
+          body main .upper-section .principal div {
+            flex-direction: column;
+            padding: 2em 0em; }
+            body main .upper-section .principal div h1 {
+              width: auto;
+              padding: 0em; }
+            body main .upper-section .principal div .parag {
+              font-size: 16px;
+              width: auto;
+              line-height: 1.5em;
+              padding-top: 1em; }
+              body main .upper-section .principal div .parag button {
+                font-size: 20px; }
+          body main .upper-section .principal .img-web {
+            height: 20em;
+            background-image: url("../images/image-web-3-mobile.jpg");
+            background-position: center;
+            background-size: cover; }
+        body main .upper-section .aside {
+          width: auto; }
+          body main .upper-section .aside div {
+            padding: 1.3em 0em; }
+            body main .upper-section .aside div h3 {
+              font-size: 20px; }
+            body main .upper-section .aside div p {
+              font-size: 17px; }
+      body main .lower-section .lower-list {
+        flex-direction: column;
+        padding: 2em 0em; }
+        body main .lower-section .lower-list div {
+          width: auto;
+          padding: .5em 0em; }
+          body main .lower-section .lower-list div img {
+            height: 11em; }
+          body main .lower-section .lower-list div .content {
+            padding: 0.5em 1em;
+            justify-content: space-between; }
+            body main .lower-section .lower-list div .content h3 {
+              font-size: 38px; }
+            body main .lower-section .lower-list div .content h4 {
+              font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
